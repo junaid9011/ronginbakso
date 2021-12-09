@@ -14,16 +14,16 @@ const Planning = () => {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit quae asperiores unde, culpa eveniet corporis aspernatur officia corrupti modi consequuntur iste hic consequatur, nihil quidem accusamus magni sunt, eligendi sequi!</p>
                 </div>
                 <div data-aos="fade-out" className="md:w-1/4">
-                    <h1 className="md:mx-30 ">Donate</h1>
+                    <h1 className="md:mx-30  text-2xl font-medium ">Donate</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Eligendi libero, consequuntur laborum pariatur ab amet minus optio in qui sit nostrum, placeat similique illum rem hic sed aperiam inventore commodi!</p>
                 </div>
                 <div data-aos="fade-out" className="md:w-1/4">
-                    <h1>Plant Trees </h1>
+                    <h1 className=" text-2xl font-medium">Plant Trees </h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae eius distinctio eaque quas consequatur! Amet quisquam, voluptatum minima nostrum debitis commodi eaque vel, aspernatur officia inventore nulla quos sed.</p>
                 </div>
                 <div data-aos="fade-out" className="md:w-1/4">
-                    <h1>Education </h1>
+                    <h1 className=" text-2xl font-medium">Education </h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt hic eligendi maiores possimus in ducimus, aliquam veritatis repudiandae sed repellendus nemo? Modi sunt temporibus officiis tenetur ipsum numquam vel magnam.</p>
                 </div>
             </div>

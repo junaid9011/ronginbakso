@@ -9,7 +9,7 @@ const Footer = () => {
   	 	<div className="row">
   	 		<div class="footer-col">
   	 			<h4>company</h4>
-  	 			<ul>
+  	 			<ul className="ml-10">
   	 				<li><a href="about" rel="noreferrer">about us</a></li>
   	 				<li><a href="goals" rel="noreferrer">our goals</a></li>
   	 				<li><a href="p" rel="noreferrer">privacy policy</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>get help</h4>
-  	 			<ul>
+  	 			<ul className="ml-10">
   	 				<li><a href="faq" rel="noreferrer">FAQ</a></li>
   	 				<li><a href="c" rel="noreferrer">Contact Us</a></li>
   	 				{/* <li><a href="cp" rel="noreferrer"></a></li> */}
