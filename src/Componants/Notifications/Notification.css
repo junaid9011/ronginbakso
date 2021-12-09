@@ -1,0 +1,65 @@
+.notification-success{
+    position:absolute;
+    top: 100px;
+    right: 2px;
+    background-color: rgb(113, 216, 113);
+    width: 200px;
+    height: 50px;
+    /* transform:translateX(100%) ; */
+    /* display: none; */
+    text-align: center;
+    border-left: 5px solid rgb(2, 43, 2) ;
+    /* animation:  5s  delay iteration-count direction fill-mode; */
+    animation-name: show;
+    /* display: block; */
+    animation-duration: 1s;
+    /* animation-iteration-count: 1; */
+    animation-timing-function: ease-in-out;
+    /* animation-fill-mode: forwards; */
+   
+
+}
+
+@keyframes show {
+    from{
+        transform: translateX(100%);
+        
+    }
+    to{
+        transform: translateX(0%);
+        display: block;
+        
+    }
+    
+}
+.notification-failed{
+    position:absolute;
+    top: 100px;
+    right: 2px;
+    background-color: rgb(231, 233, 106);
+    width: 200px;
+    height: 50px;
+    /* transform:translateX(100%) ; */
+    /* display: none; */
+    text-align: center;
+    border-left: 5px solid rgb(83, 58, 4) ;
+    /* animation:  5s  delay iteration-count direction fill-mode; */    
+    animation-name: show;
+    /* display: block; */
+    animation-duration: 1s;
+    /* animation-iteration-count: 1; */
+    animation-timing-function: ease-in-out;
+    /* animation-fill-mode: forwards; */
+   
+
+}
+
+.containers{
+    transform: translateY(50%);
+    /* display: none; */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 200px;
+
+}
