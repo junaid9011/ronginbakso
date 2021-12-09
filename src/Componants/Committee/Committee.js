@@ -66,8 +66,8 @@ const Committee = () => {
                                 <h4>{user.position}</h4>
                                 <h5 className=" w-full" >
                                     <div className=" w-full space-x-2 flex justify-center">
-                                    <a target="_blank" href={user.fb}> <BsFacebook className=""/></a>
-                                    <a target="_blank" href={user.phone}><FiPhoneCall/> </a>
+                                    <a target="_blank" rel="noreferrer" href={user.fb}> <BsFacebook className=""/></a>
+                                    <a target="_blank" rel="noreferrer" href={user.phone}><FiPhoneCall/> </a>
                                     </div>
                                     </h5>
                             </div>

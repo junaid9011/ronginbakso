@@ -1,11 +1,10 @@
-import { TextField } from '@mui/material';
 import React, { useContext, useState } from 'react';
-import { createUserEP, googleSignIn, initailizeLogin, signInWithEP, signOuts } from './AuthenticationManger';
+import { initailizeLogin} from './AuthenticationManger';
 // import {  } from 'react-router-dom';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import './Authentication.css'
 import { userContext } from '../../App';
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,sendEmailVerification,updateProfile } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,sendEmailVerification} from "firebase/auth";
 import Notification from '../Notifications/Notification';
 const Authentication = () => {
     
@@ -16,7 +15,7 @@ const Authentication = () => {
     const [notiSucces,setNotiSucces]=useState('');
     const [notiFailed,setNotiFailed]=useState('');
     const history=useNavigate();
-    const location=useLocation();
+    console.log(loggedIn);
     let { from } =  { from: { pathname: "/  " } };
 
     const [user,setUser]=useState({

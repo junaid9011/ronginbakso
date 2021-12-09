@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './Notification.css';
 import { AiFillCheckCircle,AiFillCloseCircle } from "react-icons/ai";
 const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
@@ -16,7 +16,7 @@ const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
            
            
         }, 4000);
-    },[success])
+    },[success,setNotiSucces])
     useEffect(()=>{
         setTimeout(() => {
            if(failed){
@@ -24,7 +24,7 @@ const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
            }
            
         }, 4000);
-    },[failed])
+    },[failed,setNotiFailed])
     return (
         <div>
             

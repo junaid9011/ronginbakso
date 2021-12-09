@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
-import logo from '../../image/RonginBakso.jpg';
-import { Navbar,Container,Nav,Button } from 'react-bootstrap'
+import React, {useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
-import { userContext } from '../../App';
+// import { userContext } from '../../App';
 
 // import './Header.css';
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
-    const [loggedIn,setLoggeIn]=useContext(userContext);
-    const email=loggedIn.email;
-    console.log(loggedIn)
+    // const [loggedIn,setLoggeIn]=useContext(userContext);
+    // const email=loggedIn.email;
+    // console.log(loggedIn)
 
   useEffect(() => {
     
@@ -36,7 +35,7 @@ const Header = () => {
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Voluenteers</span></Link>
       
       
-      <Link to="/login"><input  className=" px-4 py-3 outline-none text-xl font-extrabold cursor-pointer leading-10 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value={email} />
+      <Link to="/login"><input  className=" px-4 py-3 outline-none text-xl font-extrabold cursor-pointer leading-10 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value="Login" />
       </Link>
       </div>
       

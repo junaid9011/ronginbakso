@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Footer.css'
 const Footer = () => {
@@ -10,18 +10,18 @@ const Footer = () => {
   	 		<div class="footer-col">
   	 			<h4>company</h4>
   	 			<ul>
-  	 				<li><a href="#">about us</a></li>
-  	 				<li><a href="#">our goals</a></li>
-  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="about" rel="noreferrer">about us</a></li>
+  	 				<li><a href="goals" rel="noreferrer">our goals</a></li>
+  	 				<li><a href="p" rel="noreferrer">privacy policy</a></li>
   	 				{/* <li><a href="#">affiliate program</a></li> */}
   	 			</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>get help</h4>
   	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">Contact Us</a></li>
-  	 				<li><a href="#"></a></li>
+  	 				<li><a href="faq" rel="noreferrer">FAQ</a></li>
+  	 				<li><a href="c" rel="noreferrer">Contact Us</a></li>
+  	 				{/* <li><a href="cp" rel="noreferrer"></a></li> */}
   	 				
   	 			</ul>
   	 		</div>

@@ -1,6 +1,6 @@
 import * as firebase from 'firebase/app';
-import { initializeApp } from 'firebase/app';
-import {getAuth,signInWithPopup,GoogleAuthProvider,signOut,createUserWithEmailAndPassword,signInWithEmailAndPassword  } from 'firebase/auth';
+// import { initializeApp } from 'firebase/app';
+import {getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword  } from 'firebase/auth';
 import firebaseConfig from '../../firebase.config';
 
 export const initailizeLogin=()=>{
@@ -45,7 +45,6 @@ export const createUserEP=(name,email,password)=>{
         newUser.error=error.message;
         newUser.success=false;
         return newUser;
-        const errorCode = error.code;
-        const errorMessage = error.message;
+        
       });
   }

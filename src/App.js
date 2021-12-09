@@ -1,14 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Componants/Header/Header';
-import Carousel from './Componants/Carousel/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Authentication from './Componants/Authentication/Authentication';
-import Header2 from './Componants/Header/Header2';
 import Dashboard from './Componants/Dashboard/Dashboard';
-import Notificaton from './Componants/Notifications/Notification'
 import { createContext, useState } from 'react';
 
 export const userContext=createContext();
