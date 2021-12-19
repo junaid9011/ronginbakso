@@ -12,12 +12,12 @@ export default function CarouselSlider() {
     }
     return ( 
         <Carousel className="overflow-hidden" {...sittings}>
-            <div>
+            <div  >
             {/*   <p className="legend text-5xl">Donate and Be happy</p> */}
                 <img src={donate} alt="" />
                 {/* <p className="legend text-5xl">Donate and Be happy</p> */}
             </div>
-            <div>
+            {/* <div>
                 <img src="https://m.media-amazon.com/images/I/71H5hK4wUqL._SX3000_.jpg" alt="" />
                 
             </div>
@@ -28,7 +28,8 @@ export default function CarouselSlider() {
             <div>
                 <img src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" alt="" />
                 
-            </div>
+            </div> */}
+             
         </Carousel>
     );
 };
