@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Notification.css';
-import { AiFillCheckCircle,AiFillCloseCircle } from "react-icons/ai";
+import { AiFillCheckCircle,AiFillCloseCircle,AiFillExclamationCircle } from "react-icons/ai";
 const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
     // const [close,setClose]=useState(false);
     // const handleClose=()=>{
@@ -45,7 +45,7 @@ const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
                      failed&&(<div className=" notification-failed ">
                      <div className="containers ">
                 
-                      <span className=""> <span> <AiFillCheckCircle className="w-4 h-4 mr-2 text-green-700 inline"/></span>
+                      <span className=""> <span> <AiFillExclamationCircle className="w-4 h-4 mr-2 text-red-500 inline"/></span>
                       <span>login</span>
                       <span className="ml-2">failed</span>
                       <span> <AiFillCloseCircle className="w-4 ml-2 inline"/></span>

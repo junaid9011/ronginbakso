@@ -1,14 +1,15 @@
-import React, {useEffect, useState } from 'react';
+import React, {useEffect, useState ,useContext} from 'react';
+import { Navbar ,Container,Nav} from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
-// import { userContext } from '../../App';
+import { userContext } from '../../App';
 
 // import './Header.css';
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
-    // const [loggedIn,setLoggeIn]=useContext(userContext);
-    // const email=loggedIn.email;
-    // console.log(loggedIn)
+    const [loggedIn]=useContext(userContext)
+    const email=loggedIn?.email?.split('.')[0];
+    console.log(email)
 
   useEffect(() => {
     
@@ -35,13 +36,41 @@ const Header = () => {
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Voluenteers</span></Link>
       
       
-      <Link to="/login"><input  className=" px-4 py-3 outline-none text-xl font-extrabold cursor-pointer leading-10 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value="Login" />
+      <Link to="/login">
+        {email?
+        <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">{email}</span></Link>
+      :<input  className=" px-4 py-3 outline-none text-xl font-extrabold cursor-pointer leading-10 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value="Login" />
+      
+      }
       </Link>
       </div>
       
     </nav>
-      
+    <div className='md:hidden' >
+    <Navbar fixed="top" collapseOnSelect expand="lg" bg={!navbar?"none":"dark"} variant={!navbar?"light":"dark"}>
+  <Container className="" >
+  <Navbar.Brand className={!navbar?" ms-3 fs-4 text-white  ": "ms-3 fs-4 text-light  "}href="#home">RB</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  </Container>
+  <Navbar.Collapse  className="ms-3 text-black me-1" id="responsive-navbar-nav">
+    <Nav className="fs-4 text-light ">
+    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">About</Nav.Link>
+    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">Blog</Nav.Link>
+    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">Donate</Nav.Link>
+    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="/login">
+      {email?<input  className=" px-2 py-2 outline-none text-lg font-bold cursor-pointer leading-8 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value="Login" />
+      :
+      <Nav.Link to='/profile'  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">{email}</Nav.Link>
+      }
+      </Nav.Link>
+    </Nav>
+    
+  </Navbar.Collapse>
+  
+</Navbar> 
+    </div>
         </div>
+        
 
     );
 };
