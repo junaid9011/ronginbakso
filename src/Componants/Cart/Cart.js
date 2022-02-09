@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cart = (props) => {
     const cart=props.cart;
-    console.log(cart[cart.length])
+    //console.log(cart[cart.length])
     return (
         <div>
             <p>countered:{cart.length}</p>

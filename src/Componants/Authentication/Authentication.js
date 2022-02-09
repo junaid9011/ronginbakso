@@ -15,7 +15,7 @@ const Authentication = () => {
     const [notiSucces,setNotiSucces]=useState('');
     const [notiFailed,setNotiFailed]=useState('');
     const history=useNavigate();
-    console.log(loggedIn);
+    //console.log(loggedIn);
     let { from } =  { from: { pathname: "/  " } };
 
     const [user,setUser]=useState({
@@ -27,9 +27,9 @@ const Authentication = () => {
       error:' ',
       photo:''
     });
-    console.log(user);
+    //console.log(user);
     const handleChange=(event)=>{
-        console.log(event.target.value)
+        //console.log(event.target.value)
             let isFieldValid=true;
     if(event.target.name==='email'){
       
@@ -61,7 +61,7 @@ const Authentication = () => {
     }
     
     const handleSubmit=(e)=>{
-        // console.log(user.email)
+        // //console.log(user.email)
        if(newUser&&user.email&&user.password){
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, user.email, user.password)
@@ -74,12 +74,12 @@ const Authentication = () => {
         setUser(newUserInfo);
         updateProfile(user.name)
         // setLoggedIn(newUserInfo)
-        //console.log(users)
+        ////console.log(users)
         sendEmailVerification(auth.currentUser)
         .then(() => {
          // Email verification sent!
         // ...
-        console.log(auth.currentUser);
+        //console.log(auth.currentUser);
          });
         // ...
       })
@@ -98,7 +98,7 @@ const Authentication = () => {
     signInWithEmailAndPassword(auth, user.email, user.password)
       .then((userCredential) => {
         //  const user = userCredential.user;
-         console.log(user)
+         //console.log(user)
         const newUserInfo={...user};
         newUserInfo.error='';
         newUserInfo.isSignedIn=true;
@@ -106,7 +106,7 @@ const Authentication = () => {
         setNotiSucces(true);
         setLoggedIn(newUserInfo);
         history(from, { replace: true });
-        console.log(auth.currentUser);  
+        //console.log(auth.currentUser);  
         
     
       })
@@ -124,7 +124,7 @@ const Authentication = () => {
         e.preventDefault(); 
     }
 
-    //console.log(newUser)
+    ////console.log(newUser)
     
     return (
         <div  style={{backgroundColor:'lightGray'}}  className="">

@@ -9,7 +9,7 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
     const [loggedIn]=useContext(userContext)
     const email=loggedIn?.email?.split('.')[0];
-    console.log(email)
+    //console.log(email)
 
   useEffect(() => {
     

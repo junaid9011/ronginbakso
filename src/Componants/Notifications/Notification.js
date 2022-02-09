@@ -5,13 +5,13 @@ const Notification = ({success,setNotiSucces,failed,setNotiFailed}) => {
     // const [close,setClose]=useState(false);
     // const handleClose=()=>{
     //     setClose(true);
-    //     // console.log(show);
+    //     // //console.log(show);
     // }
     useEffect(()=>{
         setTimeout(() => {
            if(success){
                setNotiSucces(false);
-               console.log("entered")
+               //console.log("entered")
            }
            
            
