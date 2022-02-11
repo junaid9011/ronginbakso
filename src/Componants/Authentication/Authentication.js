@@ -11,7 +11,7 @@ const Authentication = () => {
     //authentication
     initailizeLogin();
     const [newUser,setNewUser]=useState(false); // it is for check sign in or signup form nothing else
-    const [loggedIn,setLoggedIn]=useContext(userContext);
+    // const [loggedIn,setLoggedIn]=useContext(userContext);
     const [notiSucces,setNotiSucces]=useState('');
     const [notiFailed,setNotiFailed]=useState('');
     const history=useNavigate();
