@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Authentication from './Componants/Authentication/Authentication';
 import Dashboard from './Componants/Dashboard/Dashboard';
 import { createContext, useState } from 'react';
+import Volenteers from './Componants/Voluenteers/Volenteers';
 
 export const userContext=createContext();
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route  path='/' element={<Home/>} />
           <Route  path='/login' element={<Authentication/>} />
           <Route  path='/dashboard' element={<Dashboard/>} />
-          {/* <Route  path='/n' element={<Notificaton/>} /> */}
+          <Route  path='/voluenteer' element={<Volenteers/>} />
         </Routes>
      </BrowserRouter>
     </userContext.Provider>

@@ -33,7 +33,7 @@ const Header = () => {
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">About </span></Link>
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Blog </span></Link>
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Donate</span></Link>
-      <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Voluenteers</span></Link>
+      <Link style={{textDecoration:'none'}} to="/voluenteer"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Voluenteers</span></Link>
       
       
       <Link to="/login">

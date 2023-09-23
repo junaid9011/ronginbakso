@@ -11,7 +11,8 @@ const Authentication = () => {
     //authentication
     initailizeLogin();
     const [newUser,setNewUser]=useState(false); // it is for check sign in or signup form nothing else
-    // const [loggedIn,setLoggedIn]=useContext(userContext);
+    console.log(newUser);
+    const [loggedIn,setLoggedIn]=useContext(userContext);
     const [notiSucces,setNotiSucces]=useState('');
     const [notiFailed,setNotiFailed]=useState('');
     const history=useNavigate();
@@ -28,6 +29,7 @@ const Authentication = () => {
       photo:''
     });
     //console.log(user);
+    
     const handleChange=(event)=>{
         //console.log(event.target.value)
             let isFieldValid=true;
@@ -61,7 +63,8 @@ const Authentication = () => {
     }
     
     const handleSubmit=(e)=>{
-        // //console.log(user.email)
+      e.preventDefault();
+        //console.log(user.email)
        if(newUser&&user.email&&user.password){
         const auth = getAuth();
         createUserWithEmailAndPassword(auth, user.email, user.password)
