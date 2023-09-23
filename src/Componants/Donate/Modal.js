@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
@@ -16,16 +16,16 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal({open,setOpen}) {
+export default function BasicModal({open,onClose}) {
 //   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  // const onClose = () => setOpen(false);
 //   console.log(open)
 
   return (
     <div>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={()=>onClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
@@ -33,7 +33,7 @@ export default function BasicModal({open,setOpen}) {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Thanks for your donation
           </Typography>
-          <Button sx={{mt:4,alignItems:'right'}} variant='contained' onClick={()=>setOpen(false)}>Okay</Button>
+          {/* <Button sx={{mt:4,alignItems:'right'}} variant='contained' onClick={()=>onClose}>Okay</Button> */}
 
         </Box>
       </Modal>
