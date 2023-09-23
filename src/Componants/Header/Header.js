@@ -32,7 +32,7 @@ const Header = () => {
       <Link className="text-red-500 hover:text-red-500" style={{textDecoration:'none'}} to="/"><span className="no-underline hover:text-red-500 rounded-md py-4 text-white px-2">Home</span></Link>
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">About </span></Link>
       <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Blog </span></Link>
-      <Link style={{textDecoration:'none'}} to="/"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Donate</span></Link>
+      <Link style={{textDecoration:'none'}} to="/donate"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Donate</span></Link>
       <Link style={{textDecoration:'none'}} to="/voluenteer"><span className="no-underline hover:pr-4 rounded-md py-4 text-white px-2">Voluenteers</span></Link>
       
       
@@ -56,7 +56,7 @@ const Header = () => {
     <Nav className="fs-4 text-light ">
     <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">About</Nav.Link>
     <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">Blog</Nav.Link>
-    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="about">Donate</Nav.Link>
+    <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="/donate">Donate</Nav.Link>
     <Nav.Link  className={!navbar?"fs-4 text-black  ":"fs-4 text-light  "} href="/login">
       {email?<input  className=" px-2 py-2 outline-none text-lg font-bold cursor-pointer leading-8 text-center box-border bg-red-500  border-red-500 rounded-lg text-white hover:bg-red-800" type="submit" value="Login" />
       :
