@@ -142,21 +142,21 @@ const Authentication = () => {
                 <h1 className="font-normal mb-6">{newUser?"Sign up":"Sign in"}</h1>
 
                 {newUser&&<div className="form__div relative h-12 mb-6">
-                    <input type="text" onBlur={handleChange} name="name" className="form__input" placeholder=" " required />
+                    <input type="text" onChange={handleChange} name="name" className="form__input" placeholder=" " required />
                     <label for="" className="form__label">Name</label>
                 </div>}
 
                 <div className=" relative h-12 mb-6">
-                    <input type="text"  onBlur={handleChange} name="email" className="form__input" placeholder=" " required/>
+                    <input type="text"  onChange={handleChange} name="email" className="form__input" placeholder=" " required/>
                     <label for="" className="form__label">Email</label>
                 </div>
                 <div className="form__div">
-                    <input type="password" name="password"  onBlur={handleChange} className="form__input" placeholder=" " required/>
+                    <input type="password" name="password"  onChange={handleChange} className="form__input" placeholder=" " required/>
                     <label for="" className="form__label">Password</label>
                 </div>
                {
                    newUser&& <div className="form__div">
-                   <input type="password" onBlur={handleChange} name="confirm-password" className="form__input" placeholder=" "/>
+                   <input type="password" onChange={handleChange} name="confirm-password" className="form__input" placeholder=" "/>
                    <label for="" className="form__label">Confirm Password</label>
                </div>
                }
